@@ -1,6 +1,14 @@
-
-.toolbar {
-  background-color: #526D82;
-  border: 1px solid gray;
-  padding: 10px;
+/* app.component.scss */
+.layout-container {
+  display: flex;                /* Define o layout como flexbox */
+  // height: 10vh;                /* Garante que o layout ocupe toda a altura da tela */
+  width: 100%;                  /* Ocupa toda a largura da tela */
 }
+
+.content-card {
+  margin-left: 170px;           /* Adiciona uma margem à esquerda para que o conteúdo não fique atrás do sidebar */
+  flex: 1;                      /* O conteúdo ocupa o restante do espaço disponível */
+  padding: 20px;                /* Espaçamento interno */
+  overflow-y: auto;             /* Adiciona rolagem se o conteúdo for maior que o disponível */
+}
+

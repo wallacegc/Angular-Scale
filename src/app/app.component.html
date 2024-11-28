@@ -1,6 +1,26 @@
-<mat-toolbar color="primary">
-  <span>CRUD Angular + Spring Boot</span>
-</mat-toolbar>
-<div style="padding-top: 10px;">
-  <router-outlet></router-outlet>
+
+
+<div class="layout-container">
+  <!-- Sidebar à esquerda -->
+  <sidebar class="sidebar"></sidebar>
+
+  <!-- Conteúdo principal à direita dentro do mat-card -->
+   <div  class="content-card">
+     <mat-card appearance="raised">
+       <mat-card-content>
+         <router-outlet></router-outlet>
+       </mat-card-content>
+     </mat-card>
+   </div>
 </div>
+<!--
+<div>
+  <sidebar></sidebar>
+</div>
+
+<mat-card appearance="raised" >
+  <mat-card-content>
+    <router-outlet></router-outlet>
+  </mat-card-content>
+</mat-card> -->
+
