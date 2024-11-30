@@ -1,0 +1,34 @@
+<div class="form-section">
+  <h2>Professional Information</h2>
+  <label for="position">Position</label>
+  <input type="text" id="position" [(ngModel)]="professionalData.position" placeholder="Position">
+
+  <label for="department">Department</label>
+  <input type="text" id="department" [(ngModel)]="professionalData.department" placeholder="Department">
+
+  <label for="hiringDate">Hiring Date</label>
+  <input type="date" id="hiringDate" [(ngModel)]="professionalData.hiringDate">
+
+  <label for="contractType">Contract Type</label>
+  <select id="contractType" [(ngModel)]="professionalData.contractType">
+    <option value="fullTime">Full-time</option>
+    <option value="partTime">Part-time</option>
+    <option value="intern">Intern</option>
+    <option value="freelancer">Freelancer</option>
+  </select>
+
+  <label for="salary">Salary</label>
+  <input type="number" id="salary" [(ngModel)]="professionalData.salary" placeholder="Salary">
+
+  <label for="workingHours">Working Hours</label>
+  <input type="text" id="workingHours" [(ngModel)]="professionalData.workingHours" placeholder="Working Hours">
+
+  <label for="benefits">Benefits</label>
+  <input type="text" id="benefits" [(ngModel)]="professionalData.benefits" placeholder="Benefits">
+
+  <label for="supervisor">Supervisor</label>
+  <input type="text" id="supervisor" [(ngModel)]="professionalData.supervisor" placeholder="Supervisor">
+
+  <label for="employeeId">Employee ID</label>
+  <input type="text" id="employeeId" [(ngModel)]="professionalData.employeeId" placeholder="Employee ID">
+</div>
