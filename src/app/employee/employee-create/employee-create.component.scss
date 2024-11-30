@@ -1,0 +1,48 @@
+/* tabs.component.css */
+.tabs {
+  margin: 10px auto;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tab-links {
+  display: flex;
+  border-bottom: 2px solid #ddd;
+}
+
+.tab-links button {
+  padding: 10px 20px;
+  background-color: #f0f0f0;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  flex: 1;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.tab-links button.active {
+  background-color: #333333;
+  color: white;
+}
+
+.tab-links button:hover {
+  background-color: #ddd;
+}
+
+.tab-content {
+  padding: 20px;
+}
+
+.tab-content div {
+  display: none;
+}
+
+.tab-content div.active {
+  display: block;
+}
+
+h2 {
+  color: #333;
+}

@@ -1,0 +1,16 @@
+<div class="tabs">
+  <!-- Abas -->
+  <div class="tab-links">
+    <button *ngFor="let tab of tabs; let i = index"
+            [class.active]="selectedTab === i"
+            (click)="selectTab(i)">
+      {{ tab.title }}
+    </button>
+  </div>
+
+  <!-- Conteúdo das Abas -->
+  <div class="tab-content">
+    <!-- Renderiza dinamicamente o componente da aba selecionada -->
+    <ng-container *ngComponentOutlet="tabs[selectedTab].component"></ng-container>
+  </div>
+</div>

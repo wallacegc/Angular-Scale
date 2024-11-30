@@ -1,0 +1,30 @@
+<div class="form-section">
+  <h2>Personal Information</h2>
+  <label for="name">Full Name</label>
+  <input type="text" id="name" [(ngModel)]="personalData.name" placeholder="Full Name">
+
+  <label for="birthdate">Birthdate</label>
+  <input type="date" id="birthdate" [(ngModel)]="personalData.birthdate">
+
+  <label for="gender">Gender</label>
+  <select id="gender" [(ngModel)]="personalData.gender">
+    <option value="male">Male</option>
+    <option value="female">Female</option>
+    <option value="other">Other</option>
+  </select>
+
+  <label for="maritalStatus">Marital Status</label>
+  <input type="text" id="maritalStatus" [(ngModel)]="personalData.maritalStatus" placeholder="Marital Status">
+
+  <label for="idNumber">ID Number</label>
+  <input type="text" id="idNumber" [(ngModel)]="personalData.idNumber" placeholder="ID Number">
+
+  <label for="nationality">Nationality</label>
+  <input type="text" id="nationality" [(ngModel)]="personalData.nationality" placeholder="Nationality">
+
+  <label for="birthplace">Birthplace</label>
+  <input type="text" id="birthplace" [(ngModel)]="personalData.birthplace" placeholder="Birthplace">
+
+  <label for="photo">Photo</label>
+  <input type="file" id="photo" [(ngModel)]="personalData.photo">
+</div>
