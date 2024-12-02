@@ -1,0 +1,20 @@
+<h2>Employee Table - Nursing</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Photo</th>
+      <th>Name</th>
+      <th>Birth Date</th>
+      <th>Department</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let employee of employees">
+      <td><img [src]="employee.photo" alt="Photo of {{employee.name}}" class="photo"></td>
+      <td>{{ employee.name }}</td>
+      <td>{{ employee.birthDate }}</td>
+      <td>{{ employee.department }}</td>
+    </tr>
+  </tbody>
+</table>
